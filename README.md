@@ -6,7 +6,7 @@ Este um programa que simula um chat entre o usuário e um pseudo papagaio que re
 foi utilizada a linguagem JavaScript em conjunto do framework React Native. 
 Também foi utilizada a plataforma/framework open-sorce "Expo",
 voltada para o auxílio no desenvolvimento em React, que por sua vez ajudou bastante em questão de agilidade durante a programação.
-Durante o desenvolvimento consultei algumas fontes, como a biblioteca do react (https://pt-br.reactjs.org) e o portal da Expo, pois sempre estou disposta a aprender mais e me atualizar para otimizar e melhorar meu desempenho.
+Durante o desenvolvimento consultei algumas fontes, como a biblioteca do react (https://pt-br.reactjs.org) e o portal da Expo, pois sempre estou disposta a aprender mais e me atualizar para otimizar e melhorar meu desempenho. O que otimizou bastante o tempo de desenvolvimento também, foi a utilização de sockets, já que estou familiarizada com tal tecnologia.
 
 Como rodar?
 Para compilar basta abrir o prompt de comando da sua máquina, e usando o comando "cd" se dirigir ate a pasta do projeto. Feito isso, basta digitar "npm start". 
