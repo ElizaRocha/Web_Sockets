@@ -1,5 +1,5 @@
+import { View, FlatList,Text,TextInput} from 'react-native';
 import React, { useState, useEffect } from 'react';
-import { View, FlatList, TextInput, Text, StyleSheet } from 'react-native';
 import Chat from './src/components/Chat'
 export default function App() {
 
@@ -8,12 +8,9 @@ const [text, setText] = useState('');  //responsável por setar o texto escrito 
 const [conectado, setConectado] = useState(false); //se certifica de atualizar para true quando o webSocket estiver conectado
 const [webSockets, setWs] = useState(); //receberá o link do WebSocket para se conectar
 const [data, setData] = useState([]); //controlador
-  
-  const renderItem = ({ item }) => (
-    <Chat mensagem={item.mensagem}></Chat>
-  )
+const renderItem = ({ item }) => (<Chat mensagem={item.mensagem}></Chat>)
 
-  useEffect(() => { //Usando esse hook, para que o programa atue de forma mais limpa e não necessite da criação de uma classe para a função a seguir
+  useEffect(() => { //Usando esse hook, o programa atua de forma mais limpa e não necessite da criação de uma classe para a função a seguir
     const webSockets = new WebSocket('ws://echo.websocket.org'); //recebe o WebSocket
     setWs(webSockets);//seta Ele
 

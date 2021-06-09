@@ -2,22 +2,13 @@ import React from 'react';
 import { Text, View, StyleSheet} from 'react-native';
 
 const Mensagem = (props) => {//mensagens do papagaio e do usuái
-    return (<View  style={styles.mensagem} >
+    return (<View >
             <Text style={styles.fontStyle} >Você: {props.mensagem}</Text>,
             <Text style={styles.fontStyle} >Papagaio: {props.mensagem}</Text>
         </View>
     )
 }
-const styles = StyleSheet.create({
-    mensagem: {
-        flex: 1,
-        marginTop: 15,
-        padding: 10,
-        borderWidth: 1,
-        borderRadius: 5,
-        marginRight: 'auto',
-        marginLeft: 5
-    },
+const styles = StyleSheet.create({ //Como é o mesmo layout, criei uma constante para não repetir nas linhas 6 e 7
     fontStyle:{
         fontSize: 20,
         fontWeight: 'bold',
