@@ -21,7 +21,7 @@ const renderItem = ({ item }) => (<Chat mensagem={item.mensagem}></Chat>)
       setData([...data, { id: data.length, mensagem: e.data }]); //controlando o array de dados
     };
     webSockets.onerror = (e) => {//Ocorreu algum problema na conexão com o socket
-      setConectado(false); //então a constante de conexão rece 'false'
+      setConectado(false); //então a constante de conexão recebe 'false'
     };
     webSockets.onclose = (e) => {//Aqui percebe-se que há a desconexão com o webSocket
       setConectado(false);//então, neste caso também é setado 'false' para a constante de conexão
